@@ -43,7 +43,7 @@
 <p>网格体的几何形状(geometry)决定了哪些像素会被着色，而网格体的材质(material)决定了这些像素最终的颜色是什么。</p>
 <p><strong>原始材质</strong>(RawMaterial)是 G3D 中最简单的一种材质，它完全不依赖于光照、相机等 3D 场景相关的信息。当我们为原始材质指定一种颜色后，最终材质被渲染出的颜色就完全等同于我们指定的颜色——不管场景中有没有光照，不管相机和网格体的相对位置如何。</p>
 <p>看下面这个例子：</p>
-<p><a class="jsbin-embed" href="https://jsbin.com/xebajay/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a></p>
+<p><a class="jsbin-embed" href="http://jsbin.com/xebajay/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a></p>
 <p>这个 demo 创建了一个位于 X-Y 平面内，中心点位于原点，由两个三角形组成的正方形网格体，如下图所示。正方形由 4 个顶点（A、B、C、D）和 6 个顶点索引（ABC、ACD）组成。</p>
 <p><img src="https://gw.alicdn.com/tfs/TB1c54gvwDqK1RjSZSyXXaxEVXa-439-399.png" alt=""></p>
 <p>我们是通过构造 vertices、normals、uvs 和 indices 数组来描述此网格体的顶点构成的。顶点坐标 vertices 图中已经标注了，法线 normals 则全部为 (0,0,1)，即指向 Z 轴正半轴方向。</p>
