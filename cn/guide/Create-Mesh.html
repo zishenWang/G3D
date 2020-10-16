@@ -53,7 +53,7 @@
 <p>这几种网格体的表面包含曲面，G3D 是通过短折线来模拟曲线的。比如，一个圆形，可以用 6 段短直线段来粗糙地模拟，也可以用 128 条短直线段来精细地模拟。上述几个函数的 <code>segs</code> 相关参数即是指定使用多少段直线来模拟一个圆形，数值越大，模拟就约精细（当然性能开销也越大）。</p>
 <p><img src="https://gw.alicdn.com/tfs/TB1lS7kphTpK1RjSZFGXXcHqFXa-264-264.png" alt=""></p>
 <p>下面这个例子展示了创建球体、圆柱体和圆锥体的方法，以及不同 <code>segs</code> 参数生成的网格体的区别。</p>
-<p><a class="jsbin-embed" href="https://jsbin.com/yejoxam/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="http://jsbin.com/yejoxam/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 <p>例子中创建了三个圆柱体，三个球体，三个圆锥体，<code>segs</code> 分别是 6，16 和 128。很明显，不同 <code>segs</code> 参数值对对曲面的逼真程度是有显著影响的。</p>
 <h2 id="-">自定义形状的网格体</h2>
 <p>除了这些预置好的网格体，我们还可以手动生成顶点，然后拼装成自定义形状的网格体。这项工作需要一些小技巧，我们先看一个简单的情形：如何创建自定义的<strong>线状</strong>网格体（球体，立方体这些属于面状网格体，而之前创建的坐标轴则是线状网格体）。</p>
@@ -92,7 +92,7 @@ lines.geometry = new G3D.LineGeometry({
 <p>创建面状网格体的过程稍微复杂一点。假设我们想要创建下图中，由两个正方形平面 ABCD 和 EFGH 组成的网格体：</p>
 <p><img src="https://gw.alicdn.com/tfs/TB1T5nOpsfpK1RjSZFOXXa6nFXa-505-443.png" alt=""></p>
 <p>看看示例是怎么做的。</p>
-<p><a class="jsbin-embed" href="https://jsbin.com/fesokig/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="http://jsbin.com/fesokig/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 <p>除了顶点数组 <code>vertices</code> 和索引数组 <code>indices</code>，我们还要创建 UV 数组 <code>uvs</code> 和法线数组 <code>normals</code>。</p>
 <pre><code class="language-javascript">const vertices = [
     0,1,2, // A
