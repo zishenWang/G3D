@@ -63,7 +63,7 @@ console.log(G3D);</code></pre>
 <li>创建一些网格体(Mesh)。这里，我们创建了一个球形的网格体和一个矩形平面的网格体。</li>
 <li>使场景开始渲染。</li>
 </ol>
-<p><a class="jsbin-embed" href="https://jsbin.com/fiquyiz/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
+<p><a class="jsbin-embed" href="http://jsbin.com/fiquyiz/latest/embed?js,output&height=500px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.7"></script></p>
 <h2 id="-">场景和相机</h2>
 <p>场景(Scene)中包含了一个三维的空间。在三维空间中，物体的位置使用三个坐标值(x, y, z)来表示。然后我们创建了一个环绕透视相机(RotatePerspectiveCamera)，这个相机可以在一个球面上环绕着原点旋转，并始终把镜头对准原点。相机的 <code>alpha</code> 和 <code>beta</code> 参数确定了相机在球面上的位置，而相机的 <code>radius</code> 参数确定了球面的大小。</p>
 <pre><code class="language-javascript">const camera = new G3D.RotatePerspectiveCamera(scene);
